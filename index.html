@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste Vnda</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="./dist/css/slick.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <link rel="stylesheet" href="./dist/css/slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/42c52ff6ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="top animated bounceInDown">
+      <ul class="items-menu-top-desktop">
+        <li>
+          <a href="">
+            Outono está chegando...
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Todas as novidades aqui
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Novidades para o rosto
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Novidades para o corpo
+          </a>
+        </li>
+      </ul>
+      <ul class="items-menu-top-mobile">
+        <li id="icon-menu-mobile">
+          <a href="#">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M1.683,3.39h16.676C18.713,3.39,19,3.103,19,2.749s-0.287-0.642-0.642-0.642H1.683
+								c-0.354,0-0.641,0.287-0.641,0.642S1.328,3.39,1.683,3.39z M1.683,7.879h11.545c0.354,0,0.642-0.287,0.642-0.641
+								s-0.287-0.642-0.642-0.642H1.683c-0.354,0-0.641,0.287-0.641,0.642S1.328,7.879,1.683,7.879z M18.358,11.087H1.683
+								c-0.354,0-0.641,0.286-0.641,0.641s0.287,0.642,0.641,0.642h16.676c0.354,0,0.642-0.287,0.642-0.642S18.713,11.087,18.358,11.087z
+								 M11.304,15.576H1.683c-0.354,0-0.641,0.287-0.641,0.642s0.287,0.641,0.641,0.641h9.621c0.354,0,0.642-0.286,0.642-0.641
+								S11.657,15.576,11.304,15.576z"></path>
+						</svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">Vnda</a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+            </svg>
+          </a>
+
+          <a href="#">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.638,6.181h-3.844C13.581,4.273,11.963,2.786,10,2.786c-1.962,0-3.581,1.487-3.793,3.395H2.362c-0.233,0-0.424,0.191-0.424,0.424v10.184c0,0.232,0.191,0.424,0.424,0.424h15.276c0.234,0,0.425-0.191,0.425-0.424V6.605C18.062,6.372,17.872,6.181,17.638,6.181 M13.395,9.151c0.234,0,0.425,0.191,0.425,0.424S13.629,10,13.395,10c-0.232,0-0.424-0.191-0.424-0.424S13.162,9.151,13.395,9.151 M10,3.635c1.493,0,2.729,1.109,2.936,2.546H7.064C7.271,4.744,8.506,3.635,10,3.635 M6.605,9.151c0.233,0,0.424,0.191,0.424,0.424S6.838,10,6.605,10c-0.233,0-0.424-0.191-0.424-0.424S6.372,9.151,6.605,9.151 M17.214,16.365H2.786V7.029h3.395v1.347C5.687,8.552,5.332,9.021,5.332,9.575c0,0.703,0.571,1.273,1.273,1.273c0.702,0,1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h5.941v1.347c-0.495,0.176-0.849,0.645-0.849,1.199c0,0.703,0.57,1.273,1.272,1.273s1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h3.395V16.365z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="middle animated bounceInLeft">
+      <ul>
+        <li>
+          <label for="busca">
+            <svg class="svg-icon" viewBox="0 0 20 20" for="busca">
+              <path fill="none" d="M19.129,18.164l-4.518-4.52c1.152-1.373,1.852-3.143,1.852-5.077c0-4.361-3.535-7.896-7.896-7.896
+                c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
+                c0.266,0.268,0.699,0.268,0.965,0C19.396,18.863,19.396,18.431,19.129,18.164z M8.567,15.028c-3.568,0-6.461-2.893-6.461-6.461
+                s2.893-6.461,6.461-6.461c3.568,0,6.46,2.893,6.46,6.461S12.135,15.028,8.567,15.028z"></path>
+            </svg>
+          </label>
+          <input type="search" name="busca" id="busca" placeholder="busca">
+        </li>
+        <li class="logo">
+          <a href="#">Vnda</a>
+        </li>
+        <li>
+          <a href="#">login/ minha conta</a>
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.638,6.181h-3.844C13.581,4.273,11.963,2.786,10,2.786c-1.962,0-3.581,1.487-3.793,3.395H2.362c-0.233,0-0.424,0.191-0.424,0.424v10.184c0,0.232,0.191,0.424,0.424,0.424h15.276c0.234,0,0.425-0.191,0.425-0.424V6.605C18.062,6.372,17.872,6.181,17.638,6.181 M13.395,9.151c0.234,0,0.425,0.191,0.425,0.424S13.629,10,13.395,10c-0.232,0-0.424-0.191-0.424-0.424S13.162,9.151,13.395,9.151 M10,3.635c1.493,0,2.729,1.109,2.936,2.546H7.064C7.271,4.744,8.506,3.635,10,3.635 M6.605,9.151c0.233,0,0.424,0.191,0.424,0.424S6.838,10,6.605,10c-0.233,0-0.424-0.191-0.424-0.424S6.372,9.151,6.605,9.151 M17.214,16.365H2.786V7.029h3.395v1.347C5.687,8.552,5.332,9.021,5.332,9.575c0,0.703,0.571,1.273,1.273,1.273c0.702,0,1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h5.941v1.347c-0.495,0.176-0.849,0.645-0.849,1.199c0,0.703,0.57,1.273,1.272,1.273s1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h3.395V16.365z">
+            </path>
+					</svg>
+        </li>
+      </ul>
+    </nav>
+    <nav class="bottom animated bounceInRight">
+      <ul>
+        <li>
+          <a href="#">Novidades!</a>
+        </li>
+        <li>
+          <a href="#">Perfumaria</a>
+        </li>
+        <li>
+          <a href="#">Rosto</a>
+        </li>
+        <li>
+          <a href="#">Corpo e Banho</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Naturais & Orgânicos</a>
+        </li>
+        <li>
+          <a href="#">Presentes</a>
+        </li>
+        <li>
+          <a href="#">Promoções</a>
+        </li>
+        <li>
+          <a href="#">Linhas</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu-mobile">
+      <div>
+        <ul>
+          <img src="./src/images/bottle_grapes_001.png" alt="">
+        </ul>
+        <ul>
+          <div>
+            <h3>Loja</h3>
+            <li>
+              <a href="#">
+                Sucos
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sopas
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Kit Detox
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Orgânicos
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="page-wrapper">
+    <div class="slider"> 
+      <ul class="slider-list">
+        <li class="slider-list__item">
+          <span class="back__element">
+            <img src="./src/images/back_apple_002.png" />
+          </span>
+          <span class="main__element">
+            <img src="./src/images/bottle_apple_002.png" />
+          </span>
+          <span class="front__element">
+            <img src="./src/images/front_apple_002.png" />
+          </span>
+          <span class="title__element">
+            <span class="title">apple</span>
+          </span>
+          <span class="more__element">
+            <span class="content">
+              <span class="headline">apple</span>
+              <span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+              <span class="link">
+                <div class="fill"></div>
+                <a href="#">Saiba Mais</a>
+              </span>
+            </span>
+          </span>
+         </li>
+
+        <li class="slider-list__item">
+          <span class="back__element">
+            <img src="./src/images/back_grapes_001.png" />
+          </span>
+          <span class="main__element">
+            <img src="./src/images/bottle_grapes_001.png" />
+          </span>
+          <span class="front__element">
+            <img src="./src/images/front_grapes_001.png" />
+          </span>
+          <span class="title__element">
+            <span class="title">grapes</span>
+          </span>
+          <span class="more__element">
+            <span class="content">
+              <span class="headline">grapes</span>
+              <span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+              <span class="link">
+                <div class="fill fill-dark"></div>
+                <a href="#">Saiba Mais</a>
+              </span>
+            </span>
+          </span>
+         </li>
+
+         <li class="slider-list__item">
+          <span class="back__element">
+            <img src="./src/images/back_strawberry_003.png" />
+          </span>
+          <span class="main__element">
+            <img src="./src/images/bottle_strawberry_003.png" />
+          </span>
+          <span class="front__element">
+            <img src="./src/images/front_strawberry_003.png" />
+          </span>
+          <span class="title__element">
+            <span class="title">strawberry</span>
+          </span>
+          <span class="more__element">
+            <span class="content">
+              <span class="headline">strawberry</span>
+              <span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+              <span class="link">
+                  <div class="fill"></div>
+                <a href="#">Saiba Mais catalog</a>
+              </span>
+            </span>
+          </span>
+         </li>
+         
+      </ul>
+      
+      <div class="slider__nav-bar">
+        <a class="nav-control">
+          <i class="fas fa-circle"></i>
+        </a>
+        <a class="nav-control">
+          <i class="fas fa-circle"></i>
+        </a>
+        <a class="nav-control">
+          <i class="fas fa-circle"></i>
+        </a>
+      </div>
+      
+      <div class="slider__controls">
+        <a class="slider__arrow slider__arrow_prev" style="margin-top: 45px; margin-left: 50px">
+          <i class="fas fa-chevron-left" style="font-size: 45px;"></i>
+        </a>
+        <a class="slider__arrow slider__arrow_next" style="margin-top: 45px;">
+          <i class="fas fa-chevron-right" style="font-size: 45px;"></i>
+        </a>
+      </div>
+
+    </div>   
+  </section>
+  <section class="products">
+    <h1>Sucos <br> 
+        prensados <br> 
+        a frio
+    </h1>    
+    <div class="grid-products">
+      <div class="wraper-products">
+        <div class="product">
+          <a href="#">
+            <div class="info-product">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="bg-product">
+              
+            </div>
+            <img src="./src/images/bottle_grapes_001.png" alt="">
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <div class="info-product">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="bg-product">
+            </div>
+            <img src="./src/images/bottle_apple_002.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="wraper-products">
+        <div class="product">
+          <a href="#">
+            <div class="info-product">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="bg-product">
+              
+            </div>
+            <img src="./src/images/bottle_strawberry_003.png" alt="">
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <div class="info-product">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="bg-product">
+            </div>
+            <img src="./src/images/bottle_grapes_001.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="carousel-products">
+    <div class="container">
+      <ul id="carousel-products">
+        <li>
+          <div class="detail-product">
+            <a href="#" class="link-detail-product">
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus bibendum ex. Integer mi        sapien, venenatis vitae urna dignissim, consequat gravida urna. Vivamus sapien enim, bibendum ut      nulla non.
+              </p>
+              <div>
+                <button>
+                  Lorem Ipsum
+                </button>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="link-product">
+            <img src="./src/images/bottle_grapes_001.png" alt="">
+          </a>
+        </li>
+        <li>
+          <div class="detail-product">
+            <a href="#" class="link-detail-product">
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus bibendum ex. Integer mi      sapien, venenatis vitae urna dignissim, consequat gravida urna. Vivamus sapien enim, bibendum ut    nulla non.
+              </p>
+              <div>
+                <button>
+                  Lorem Ipsum
+                </button>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="link-product">
+            <img src="./src/images/bottle_apple_002.png" alt="">
+          </a>
+        </li>
+        <li>
+          <div class="detail-product">
+            <a href="#" class="link-detail-product">
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus bibendum ex. Integer mi      sapien, venenatis vitae urna dignissim, consequat gravida urna. Vivamus sapien enim, bibendum ut    nulla non.
+              </p>
+              <div>
+                <button>
+                  Lorem Ipsum
+                </button>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="link-product">
+            <img src="./src/images/bottle_strawberry_003.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="wrapper-logo">
+        <a href="#" class="logo-footer">Vnda</a>
+      </div>
+      <div class="wrapper-content-footer-bottom">
+        <div class="content-left">
+            <ul>
+              <li>
+                <a href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-center">
+            <ul class="social-media-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="newsletter">
+              <h4 class="title-newsletter-footer">Weekly Newsletter</h4>
+              <form action="#">
+                <input type="text" placeholder="name@email.com">
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="content-right">
+            <ul>
+              <li>
+                <a href="#">
+                  Shupping Info
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Returns / Exchanges
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <p class="copyright-footer">© 2019</p>
+    </div>
+  </footer>
+<!-- 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124048250-1');
+  </script> -->
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./src/js/slick.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./src/js/demo.js"></script>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
